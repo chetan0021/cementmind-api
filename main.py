@@ -5,7 +5,7 @@ import pandas as pd
 import json
 import os
 
-# --- Load Model and Artifacts ---
+# --- Load Model and All Artifacts ---
 # This code runs ONCE when the Cloud Function "cold starts".
 # It loads the model from the file into memory.
 
@@ -121,4 +121,5 @@ def predict_telemetry(request):
     except Exception as e:
         print(f"Error during prediction: {e}")
         return ("Internal Server Error: Prediction failed.", 500, headers)
+
 
