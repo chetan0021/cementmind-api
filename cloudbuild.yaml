@@ -1,0 +1,18 @@
+# This file tells Google Cloud Build how to deploy your function.
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - predict-cement-telemetry  # The name of your function
+  - --gen2
+  - --region=us-central1
+  - --runtime=python311
+  - --source=.
+  - --entry-point=predict_telemetry
+  - --trigger-http
+  - --allow-unauthenticated
+
+# This tells Cloud Build how long to wait before timing out.
+timeout: '1600s'

@@ -1,0 +1,1 @@
+{"input_features": ["raw_mill_load"], "output_features": ["main_motor_vibration_x", "main_motor_vibration_y", "main_motor_vibration_z", "main_motor_bearing_temperature", "main_motor_winding_temperature", "raw_mill_bearing_temperature", "main_motor_current_r", "main_motor_current_y", "main_motor_current_b", "raw_mill_load", "hydraulic_pressure", "cooling_water_flow"]}
