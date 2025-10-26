@@ -1,3 +1,4 @@
+# Triggering the first build
 import functions_framework
 import joblib
 import pandas as pd
@@ -120,3 +121,4 @@ def predict_telemetry(request):
     except Exception as e:
         print(f"Error during prediction: {e}")
         return ("Internal Server Error: Prediction failed.", 500, headers)
+
